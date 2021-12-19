@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive pricing component</title>
+    <link rel="stylesheet" href="pricing.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Simple, traffic-based pricing </h1>
+            <div id="intro">
+                <p>Sign-up for our 30-day trial.</p>
+                <p>No credit card required.</p>
+            </div>
+            
+        </div>
+        <div id="box">
+            <div id="box_head">
+                <p id="views"> <span>100K</span> PAGEVIEWS</p>
+                <div id="slidecon">
+                    <input type="range" id="range" min="1" value="3" max="5">
+                </div>
+                <div id="price">
+                    <h1>$</h1>
+                    <h1 id="amount">16.00</h1>
+                    <p id="period">/ month</p>
+                </div>
+            </div>
+            
+            
+            
+            <div id="billing">
+                <p>Monthly Billing</p>
+                <div id="toggBtn" onclick="toggler()">
+                    <div id="toggball"></div>
+                </div>
+                <p>Yearly Billing <span id="discount">-25%</span></p>
+                
+            </div>
+            <div id="footer">
+                <div id="offer">
+                    <p><span><img id="check" src="images/icon-check.svg"></span>Unlimited websites</p>
+                    <p><span><img id="check" src="images/icon-check.svg"></span>100% data ownership</p>
+                    <p><span><img id="check" src="images/icon-check.svg"></span>Email reports</p>
+                </div>
+                <div id="startbtn">Start my trial</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="js/pricing.js"></script>
+</html>
+
+
